@@ -1,8 +1,26 @@
 aid: stipple-bio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stipple-bio.png
 name: Stipple Bio
-description: 'Stipple Bio is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Stipple Bio is a preclinical precision-oncology biotechnology company based in Cambridge,
+  Massachusetts, founded in 2022 by cancer-biology researchers Aaron Ring (Fred Hutch) and Aashish Manglik
+  (UCSF). Its Pointillist Platform performs cellular profiling and tumor-specific epitope discovery to
+  design antibody binders and antibody-drug conjugates (ADCs) that target tumor-specific cell-surface
+  epitopes while avoiding on-target, off-tumor toxicity. Its lead asset, STP-100, is an ADC advancing
+  toward early clinical studies. The company emerged from stealth in April 2026 with an oversubscribed
+  $100M Series A co-led by RA Capital, a16z Bio+Health and Nextech Invest, with participation from Google
+  Ventures (gv). As a therapeutics company, Stipple Bio publishes no public API, developer portal, or
+  software developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/stipple-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Oncology
+- Precision Medicine
+- Drug Discovery
+- Therapeutics
+- Antibody-Drug Conjugates
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/stipple-bio-domain-security.yml
 - type: Website
   url: https://stipple.bio
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
